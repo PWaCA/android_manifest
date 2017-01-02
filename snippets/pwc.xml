@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- PWaCA additions -->
+    <project path="build" name="android_build" groups="pdk,tradefed" remote="pwc" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+    </project>
+    <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="pwc" />
+    <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="pwc" />
+
+</manifest>

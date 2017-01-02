@@ -14,9 +14,6 @@
             sync-c="true"
             sync-j="4" />
 
-    <project path="build" name="platform/build" groups="pdk,tradefed" remote="aosp" >
-        <copyfile src="core/root.mk" dest="Makefile" />
-    </project>
     <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
     <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" remote="aosp" />
     <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" remote="aosp" >
@@ -321,7 +318,6 @@
     <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="aosp" />
-    <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
     <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" />
     <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
@@ -437,7 +433,6 @@
     <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" remote="aosp" />
     <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" groups="pdk-fs" remote="aosp" />
     <project path="packages/apps/SafetyRegulatoryInfo" name="platform/packages/apps/SafetyRegulatoryInfo" remote="aosp" />
-    <project path="packages/apps/Settings" name="platform/packages/apps/Settings" groups="pdk-fs" remote="aosp" />
     <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="aosp" />
     <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" remote="aosp" />
     <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" groups="pdk-fs" remote="aosp" />

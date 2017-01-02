@@ -551,4 +551,7 @@
     <project path="tools/test/connectivity" name="platform/tools/test/connectivity" />
     <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
+    <!-- PWaCA -->
+    <project path="manifest" name="PWaCA/android_manifest" />
+
 </manifest>

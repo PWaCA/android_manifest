@@ -14,9 +14,6 @@
             sync-c="true"
             sync-j="4" />
 
-    <project path="build" name="platform/build" groups="pdk,tradefed" remote="aosp" >
-        <copyfile src="core/root.mk" dest="Makefile" />
-    </project>
     <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
     <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" remote="aosp" />
     <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" remote="aosp" >
@@ -120,7 +117,6 @@
     <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc" remote="aosp" />
     <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer" remote="aosp" />
     <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-    <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" remote="aosp" />
     <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -130,7 +126,6 @@
     <project path="external/esd" name="platform/external/esd" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="external/expat" name="platform/external/expat" groups="pdk" remote="aosp" />
     <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-    <project path="external/f2fs-tools" name="platform/external/f2fs-tools" groups="pdk" remote="aosp" />
     <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" remote="aosp" />
     <project path="external/fec" name="platform/external/fec" remote="aosp" />
     <project path="external/fio" name="platform/external/fio" groups="pdk-fs" remote="aosp" />
@@ -204,7 +199,6 @@
     <project path="external/libmicrohttpd" name="platform/external/libmicrohttpd" remote="aosp" />
     <project path="external/libmpeg2" name="platform/external/libmpeg2" groups="pdk" remote="aosp" />
     <project path="external/libmtp" name="platform/external/libmtp" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-    <project path="external/libnfc-nci" name="platform/external/libnfc-nci" groups="pdk" remote="aosp" />
     <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" groups="pdk" remote="aosp" />
     <project path="external/libnl" name="platform/external/libnl" groups="pdk" remote="aosp" />
     <project path="external/libogg" name="platform/external/libogg" groups="pdk" remote="aosp" />
@@ -295,7 +289,6 @@
     <project path="external/testng" name="platform/external/testng" groups="pdk" remote="aosp" />
     <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-    <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" remote="aosp" />
     <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" remote="aosp" />
     <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" />
     <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" remote="aosp" />
@@ -313,15 +306,12 @@
     <project path="external/vulkan-validation-layers" name="platform/external/vulkan-validation-layers" remote="aosp" />
     <project path="external/webp" name="platform/external/webp" groups="pdk,qcom_msm8x26" remote="aosp" />
     <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" remote="aosp" />
-    <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" remote="aosp" />
     <project path="external/xmlrpcpp" name="platform/external/xmlrpcpp" groups="pdk" remote="aosp" />
     <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="external/zlib" name="platform/external/zlib" groups="pdk" remote="aosp" />
     <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-    <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="aosp" />
-    <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
     <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" />
     <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
@@ -329,7 +319,6 @@
     <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-    <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" remote="aosp" />
     <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" remote="aosp" />
     <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -374,17 +363,9 @@
     <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" remote="aosp" />
     <project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors" remote="aosp" />
     <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" remote="aosp" />
-    <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" remote="aosp" />
-    <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" remote="aosp" />
     <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" remote="aosp" />
-    <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" remote="aosp" />
     <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk" remote="aosp" />
-    <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" remote="aosp" />
-    <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" remote="aosp" />
-    <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="pdk,qcom,qcom_display" remote="aosp" />
     <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" remote="aosp" />
-    <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster" remote="aosp" />
-    <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" remote="aosp" />
     <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" remote="aosp" />
     <project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="qcom_msm8994" remote="aosp" />
     <project path="hardware/qcom/msm8996" name="platform/hardware/qcom/msm8996" groups="qcom_msm8996" remote="aosp" />
@@ -393,7 +374,6 @@
     <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" remote="aosp" />
     <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" remote="aosp" />
     <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" remote="aosp" />
-    <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" remote="aosp" />
     <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" remote="aosp" />
     <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" remote="aosp" />
     <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" remote="aosp" />
@@ -437,7 +417,6 @@
     <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" remote="aosp" />
     <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" groups="pdk-fs" remote="aosp" />
     <project path="packages/apps/SafetyRegulatoryInfo" name="platform/packages/apps/SafetyRegulatoryInfo" remote="aosp" />
-    <project path="packages/apps/Settings" name="platform/packages/apps/Settings" groups="pdk-fs" remote="aosp" />
     <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="aosp" />
     <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" remote="aosp" />
     <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" groups="pdk-fs" remote="aosp" />
@@ -520,21 +499,16 @@
     <project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" remote="aosp" />
     <project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" remote="aosp" />
     <project path="system/connectivity/shill" name="platform/system/connectivity/shill" remote="aosp" />
-    <project path="system/core" name="platform/system/core" groups="pdk" remote="aosp" />
-    <project path="system/extras" name="platform/system/extras" groups="pdk" remote="aosp" />
     <project path="system/firewalld" name="platform/system/firewalld" remote="aosp" />
     <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
     <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" remote="aosp" />
-    <project path="system/media" name="platform/system/media" groups="pdk" remote="aosp" />
     <project path="system/nativepower" name="platform/system/nativepower" remote="aosp" />
-    <project path="system/netd" name="platform/system/netd" groups="pdk" remote="aosp" />
     <project path="system/nvram" name="platform/system/nvram" remote="aosp" />
     <project path="system/security" name="platform/system/security" groups="pdk" remote="aosp" />
     <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" remote="aosp" />
     <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
     <project path="system/tpm" name="platform/system/tpm" remote="aosp" />
     <project path="system/update_engine" name="platform/system/update_engine" remote="aosp" />
-    <project path="system/vold" name="platform/system/vold" groups="pdk" remote="aosp" />
     <project path="system/weaved" name="platform/system/weaved" remote="aosp" />
     <project path="system/webservd" name="platform/system/webservd" remote="aosp" />
     <project path="toolchain/binutils" name="toolchain/binutils" remote="aosp" />

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- PWaCA additions -->
+    <project path="build" name="PWaCA/android_build" groups="pdk,tradefed" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+    </project>
+
+    <project path="device/qcom/common" name="PWaCA/android_device_qcom_common" />
+    <project path="device/qcom/sepolicy" name="PWaCA/android_device_qcom_sepolicy" />
+
+    <project path="external/e2fsprogs" name="PWaCA/android_external_e2fsprogs" groups="pdk" />
+    <project path="external/exfat" name="PWaCA/android_external_exfat" groups="pdk" />
+    <project path="external/f2fs-tools" name="PWaCA/android_external_f2fs-tools" groups="pdk" />
+    <project path="external/fuse" name="PWaCA/android_external_fuse" groups="pdk" />
+    <project path="external/libnetfilter_conntrack" name="PWaCA/android_external_libnetfilter_conntrack" />
+    <project path="external/libnfc-nci" name="PWaCA/android_external_libnfc-nci" groups="pdk" />
+    <project path="external/libnfnetlink" name="PWaCA/android_external_libnfnetlink" />
+    <project path="external/tinyalsa" name="PWaCA/android_external_tinyalsa" groups="pdk" />
+    <project path="external/wpa_supplicant_8" name="PWaCA/android_external_wpa_supplicant_8" groups="pdk" />
+
+    <project path="frameworks/av" name="PWaCA/android_frameworks_av" groups="pdk" />
+    <project path="frameworks/base" name="PWaCA/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
+    <project path="frameworks/native" name="PWaCA/android_frameworks_native" groups="pdk" />
+
+    <project path="hardware/libhardware" name="PWaCA/android_hardware_libhardware" groups="pdk" />
+    <project path="hardware/libhardware_legacy" name="PWaCA/android_hardware_libhardware_legacy" groups="pdk" />
+    <project path="hardware/qcom/audio/default" name="PWaCA/android_hardware_qcom_audio" groups="qcom,qcom_audio" />
+    <project path="hardware/qcom/bt" name="PWaCA/android_hardware_qcom_bt" groups="qcom" />
+    <project path="hardware/qcom/camera" name="PWaCA/android_hardware_qcom_camera" groups="qcom" />
+    <project path="hardware/qcom/display" name="PWaCA/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" />
+    <project path="hardware/qcom/keymaster" name="PWaCA/android_hardware_qcom_keymaster" groups="qcom,qcom_keymaster" />
+    <project path="hardware/qcom/media" name="PWaCA/android_hardware_qcom_media" groups="qcom" />
+    <project path="hardware/ril" name="PWaCA/android_hardware_ril" groups="pdk" />
+
+    <project path="manifest" name="PWaCA/android_manifest" />
+
+    <project path="packages/apps/Settings" name="PWaCA/android_packages_apps_Settings" groups="pdk-fs" />
+
+    <project path="system/core" name="PWaCA/android_system_core" groups="pdk" />
+    <project path="system/extras" name="PWaCA/android_system_extras" groups="pdk" />
+    <project path="system/media" name="PWaCA/android_system_media" groups="pdk" />
+    <project path="system/netd" name="PWaCA/android_system_netd" groups="pdk" />
+    <project path="system/vold" name="PWaCA/android_system_vold" groups="pdk" />
+
+    <project path="vendor/codeaurora/telephony" name="PWaCA/android_vendor_codeaurora_telephony" />
+    <project path="vendor/qcom/opensource/dataservices" name="PWaCA/android_vendor_qcom_opensource_dataservices" />
+    <project path="vendor/qcom/opensource/dpm" name="PWaCA/android_vendor_qcom_opensource_dpm" />
+    <project path="vendor/qcom/opensource/time-services" name="PWaCA/android_vendor_qcom_opensource_time-services" />
+
+</manifest>
